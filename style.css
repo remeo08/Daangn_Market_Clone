@@ -1,0 +1,430 @@
+@font-face {
+    font-family: 'Cafe24Ssurround';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'omyu_pretty';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+@font-face {
+    font-family: 'SUITE-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*네비게이션*/
+.nav{
+    width: 100vw;
+    height: 80px;
+    padding: 20px 0 15px 0;
+    display: inline-flex;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    background-color: bisque;
+}
+
+
+/*좌상단 로고*/
+.nav_logo{
+    position: relative;
+    margin-right: 30px;
+    margin-left: 60px;
+}
+
+.nav_logo img{
+    position: relative;
+    align-items: center;
+    width: 150px;
+}
+
+
+/*카테고리*/
+.nav_category_box{
+    width: 70%;
+}
+
+.nav_category{
+    position: relative;
+    list-style-type: none;
+}
+
+.nav_category li{
+    display: inline-block;
+    align-items: center;
+    margin-right: 25px;
+    font-family: 'Cafe24Ssurround';
+    font-size: 22px;
+}
+
+.nav_category a{
+    text-decoration: none;
+    color: #4d5159;
+}
+
+.nav_category a:hover{
+    color: #7f8592;
+}
+
+
+/*검색창*/
+.search, .search_btn{
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 0.6rem;
+    padding: 10px;
+    margin-right: 10px;
+    font-family: 'omyu_pretty';
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.search_btn{
+    width: 100px;
+    border: 1px solid #d1d3d8;
+    background-color: #fff;
+    margin-right: 60px;
+}
+
+
+
+
+
+
+/*브랜드 홍보1*/
+.sec1, .sec2, .sec3, .sec4{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2em;
+    align-items: center;
+    padding: 60px;
+    background-color: rgba(167, 108, 46, 0.445);
+}
+
+
+/*좌측 글*/
+.sec1{
+    grid-template-columns: 1.5fr 2fr;
+}
+
+.sec1_txt{
+    padding-left: 60px;
+}
+
+[class$="tit"]{
+    font-family: 'Cafe24Ssurround';
+    font-size: 50px;
+    line-height: 1.3em;
+    margin-bottom: 20px;
+}
+
+[class$="sub"]{
+    font-size: 18px;
+}
+
+
+/*우측 이미지*/
+.sec1_img{
+    width: 100%;
+    height: 100%;
+}
+
+
+[class^="mock_up"]{
+    position: relative;
+    display: inline-block;
+    width: 230px;
+    height: 450px;
+    border: 5px solid #42454c;
+    border-radius: 2rem;
+    box-shadow: 5px 5px 20px #7f8592;
+    background-color: #fff;
+    /* overflow: hidden; */
+}
+
+.mock_up1{
+    right: -100px;
+    top: 140px;
+}
+
+.mock_up2{
+    top: 50px;
+    z-index: 1;
+}
+
+.mock_up3{
+    right: 100px;
+    top: 250px;
+}
+
+
+
+
+/*브랜드 홍보2*/
+.sec2{
+    background-color: rgba(250, 228, 201, 0.489);
+    z-index: 5;
+}
+
+.sec2_btn, .sec4_btn{
+    margin-top: 40px;
+    margin-right: 10px;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 5rem;
+    background-color: #ff8b3da2;
+    box-shadow: 2px 2px 20px #d8dbe4;
+    font-family: 'Cafe24Ssurround';
+    font-size: 17px;
+    color: #3f4248;
+}
+
+.mock_up4{
+    position: relative;
+    left: 150px;
+}
+.mock_up5{
+    position: relative;
+    left: 90px;
+    z-index: 3;
+}
+
+
+/*브랜드홍보3*/
+.sec3{
+    background-color: #56c27136;
+}
+
+.sec3_txt{
+    padding-left: 60px;
+}
+
+.sec3_txt_sub{
+    margin: 20px 0;
+}
+
+.sec3_merit{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px 0;
+}
+
+.sec3_merit div{
+    width: 180px;
+    display: inline-block;
+    text-align: center;
+    padding: 30px 20px 25px 20px;
+    border-radius: 4em;
+    border: 3px dashed rgb(190, 187, 187);
+    background-color: #ffffff3f;
+}
+
+.sec3_png{
+    width: 70px;
+}
+
+.sec3_merit_tit{
+    font-size: 25px;
+    margin: 15px 0;
+}
+
+.sec3_img{
+    width: 100%;
+}
+
+.mock_up7{
+    top: 100px;
+    left: -120px
+}
+
+
+
+/*동네가게*/
+.sec4{
+    background-color: #fff9823a;
+}
+
+.sec4_img{
+    width: 100%;
+}
+
+.mock_up9{
+    top: 100px;
+    left: -120px
+}
+
+
+
+/*인기매물*/
+.product{
+    background-color: #F8F9FA;
+    width: 100vw;
+    height: 1300px;
+}
+
+.product_tit{
+    text-align: center;
+    font-family: 'Cafe24Ssurround';
+    font-size: 50px;
+    padding: 150px 0 100px;
+}
+
+.product_table{
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 3rem;
+}
+
+.sell_img{
+    width: 200px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+.sell p{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 10pt;
+}
+
+.sell_name{
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.sell_price{
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.sell_reg{
+    font-size: 13px;
+    margin-bottom: 3px;
+}
+
+
+.sell_react{
+    color: #868e96;
+    font-size: 13px;
+}
+
+.button_area{
+    display: flex;
+    justify-content: center;
+    padding: 120px 0 0 0;
+}
+
+.product_more_btn{
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 5rem;
+    background-color: #ff8b3da2;
+    box-shadow: 2px 2px 20px #d8dbe4;
+    font-family: 'Cafe24Ssurround';
+    font-size: 17px;
+    margin: 0 auto;
+}
+
+
+/*중고거래 인기검색어 top10*/
+.top10{
+    border-bottom: 1px solid #a4a9b5;
+}
+
+.top10_tit{
+    font-size: 30px;
+    line-height: 1.3em;
+    margin: 100px 0 70px;
+    text-align: center;
+}
+
+.top10 ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+}
+
+.top10 li{
+    font-family: 'Cafe24Ssurround';
+    font-size: 25px;
+    color: #0b0b0b;
+    text-shadow: 1px 1px 20px tomato;
+}
+
+.top10 li:hover{
+    color: #FF8A3D;
+    text-shadow: 1px 1px 20px yellow /*#56C271*/;
+    cursor: pointer;
+}
+
+
+
+
+/*기타 회사정보*/
+.info{
+    display: flex;
+    justify-content: center;
+    padding: 70px 0;
+}
+
+.info1{
+    display: flex;
+}
+
+.info1 ul{
+    list-style-type: none;
+    padding: 20px;
+    line-height: 2em;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 600;
+    color:  #757980;
+}
+
+
+/*당근마켓 앱 다운로드*/
+.app_tit{
+    padding: 0 50px;
+    font-family: 'Cafe24Ssurround';
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.app_img{
+    display: flex;
+    align-items: center;
+    font-family: 'SUITE-Regular';
+    font-size: 15px;
+}
+
+.app_download{
+    width: 30px;
+    margin-right: 10px;
+}
+
+.app_download p{
+    margin-right: 20px;
+}
