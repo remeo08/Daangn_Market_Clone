@@ -407,24 +407,88 @@
 
 /*당근마켓 앱 다운로드*/
 .app_tit{
-    padding: 0 50px;
     font-family: 'Cafe24Ssurround';
     font-weight: 600;
     font-size: 30px;
+    padding-left: 40px;
 }
 
 .app_img{
     display: flex;
+    justify-content: center;
     align-items: center;
     font-family: 'SUITE-Regular';
     font-size: 15px;
+    font-weight: 600;
+    padding-left: 40px;
 }
 
-.app_download{
-    width: 30px;
+[class ^= "app_download"]{
+    display: flex;
+    align-items: center;
+    background-color: rgb(235, 237, 239);
+    padding: 10px;
+    border-radius: 10px;
+    width: 146.7px;
+}
+
+.app_img img{
+    height: 34px;
     margin-right: 10px;
 }
 
-.app_download p{
+.app_download_1{
+    width: 146.7px;
+    padding-left: 15px;
     margin-right: 20px;
+}
+
+
+/*footer*/
+.footer_box{
+    display: flex;
+    justify-content: center;
+}
+
+.footer{
+    width: 50%;
+    border-top: 1px solid#eaebee;
+    padding: 40px 0;
+}
+
+.txt_em{
+    color:#868b94;
+    font-family: 'SUITE-Regular';
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 3px;    
+}
+
+.info2{
+    color:#868b94;
+    font-family: 'SUITE-Regular';
+    font-size: 14px;
+    word-spacing: 5px;
+    padding-left: 20px;
+}
+
+.txt_em_1{
+    color:#868b94;
+    font-family: 'SUITE-Regular';
+    font-size: 14px;
+    font-weight: 700;
+    word-spacing: 5px;
+    text-decoration: none;
+    padding-left: 20px;
+    margin: 15px 0;
+}
+
+.sns_lan{
+    margin-right: 20px;
+    float: right;
+}
+
+.fa-brands{
+    height: 15px;
+    filter: grayscale(100%);
 }
