@@ -18,17 +18,14 @@
     font-style: normal;
 }
 
-
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
 /*네비게이션*/
-.nav{
+.nav {
     width: 100vw;
     height: 80px;
     padding: 20px 0 15px 0;
@@ -39,32 +36,30 @@
     background-color: bisque;
 }
 
-
 /*좌상단 로고*/
-.nav_logo{
+.nav_logo {
     position: relative;
     margin-right: 30px;
     margin-left: 60px;
 }
 
-.nav_logo img{
+.nav_logo img {
     position: relative;
     align-items: center;
     width: 150px;
 }
 
-
 /*카테고리*/
-.nav_category_box{
+.nav_category_box {
     width: 70%;
 }
 
-.nav_category{
+.nav_category {
     position: relative;
     list-style-type: none;
 }
 
-.nav_category li{
+.nav_category li {
     display: inline-block;
     align-items: center;
     margin-right: 25px;
@@ -72,18 +67,18 @@
     font-size: 22px;
 }
 
-.nav_category a{
+.nav_category a {
     text-decoration: none;
     color: #4d5159;
 }
 
-.nav_category a:hover{
+.nav_category a:hover {
     color: #7f8592;
 }
 
-
 /*검색창*/
-.search, .search_btn{
+.search,
+.search_btn {
     width: 300px;
     height: 40px;
     border: none;
@@ -95,20 +90,58 @@
     font-weight: 500;
 }
 
-.search_btn{
+.search_btn {
     width: 100px;
     border: 1px solid #d1d3d8;
     background-color: #fff;
     margin-right: 60px;
 }
 
+/*캐러셀 버튼*/
+.carousel_btn_container {
+    width: 100%;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    position: absolute;
+    z-index: 8;
+    overflow-x: hidden;
+}
 
+.carousel_btn_box {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
 
+.slide_row_btn {
+    width: 45px;
+    height: 5px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(167, 108, 46, 0.445);
+    opacity: 0.5;
+}
 
+.slide_row_btn:hover {
+    opacity: 1;
+}
 
+/*캐러셀*/
+.carousel_container {
+    width: 400vw;
+    height: 100%;
+    display: flex;
+    overflow-x: hidden;
+    transition: all 1s;
+}
 
-/*브랜드 홍보1*/
-.sec1, .sec2, .sec3, .sec4{
+/*캐러셀 내용물*/
+.sec1,
+.sec2,
+.sec3,
+.sec4 {
     width: 100vw;
     height: 100vh;
     display: grid;
@@ -119,36 +152,33 @@
     background-color: rgba(167, 108, 46, 0.445);
 }
 
-
 /*좌측 글*/
-.sec1{
+.sec1 {
     grid-template-columns: 1.5fr 2fr;
 }
 
-.sec1_txt{
+.sec1_txt {
     padding-left: 60px;
 }
 
-[class$="tit"]{
+[class$='tit'] {
     font-family: 'Cafe24Ssurround';
     font-size: 50px;
     line-height: 1.3em;
     margin-bottom: 20px;
 }
 
-[class$="sub"]{
+[class$='sub'] {
     font-size: 18px;
 }
 
-
 /*우측 이미지*/
-.sec1_img{
+.sec1_img {
     width: 100%;
     height: 100%;
 }
 
-
-[class^="mock_up"]{
+[class^='mock_up'] {
     position: relative;
     display: inline-block;
     width: 230px;
@@ -160,31 +190,29 @@
     /* overflow: hidden; */
 }
 
-.mock_up1{
+.mock_up1 {
     right: -100px;
     top: 140px;
 }
 
-.mock_up2{
+.mock_up2 {
     top: 50px;
     z-index: 1;
 }
 
-.mock_up3{
+.mock_up3 {
     right: 100px;
     top: 250px;
 }
 
-
-
-
 /*브랜드 홍보2*/
-.sec2{
+.sec2 {
     background-color: rgba(250, 228, 201, 0.489);
     z-index: 5;
 }
 
-.sec2_btn, .sec4_btn{
+.sec2_btn,
+.sec4_btn {
     margin-top: 40px;
     margin-right: 10px;
     width: 200px;
@@ -198,38 +226,40 @@
     color: #3f4248;
 }
 
-.mock_up4{
+.mock_up4 {
     position: relative;
     left: 150px;
 }
-.mock_up5{
+.mock_up5 {
     position: relative;
     left: 90px;
     z-index: 3;
 }
 
-
 /*브랜드홍보3*/
-.sec3{
+.sec3 {
     background-color: #56c27136;
+    grid-template-columns: 2fr 1.5fr;
+    grid-gap: 6em;
 }
 
-.sec3_txt{
+.sec3_txt {
     padding-left: 60px;
 }
 
-.sec3_txt_sub{
+.sec3_txt_sub {
     margin: 20px 0;
 }
 
-.sec3_merit{
+.sec3_merit {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
     padding: 20px 0;
 }
 
-.sec3_merit div{
-    width: 180px;
+.sec3_merit div {
+    width: 220px;
     display: inline-block;
     text-align: center;
     padding: 30px 20px 25px 20px;
@@ -238,105 +268,102 @@
     background-color: #ffffff3f;
 }
 
-.sec3_png{
+.sec3_png {
     width: 70px;
 }
 
-.sec3_merit_tit{
+.sec3_merit_tit {
     font-size: 25px;
     margin: 15px 0;
 }
 
-.sec3_img{
+.sec3_img {
     width: 100%;
 }
 
-.mock_up7{
+.mock_up7 {
     top: 100px;
-    left: -120px
+    left: -120px;
 }
 
-
-
 /*동네가게*/
-.sec4{
+.sec4 {
     background-color: #fff9823a;
 }
 
-.sec4_img{
+.sec4_img {`
     width: 100%;
+    padding-left: 120px;
 }
 
-.mock_up9{
+.mock_up9 {
     top: 100px;
-    left: -120px
+    left: -120px;
 }
-
-
 
 /*인기매물*/
-.product{
-    background-color: #F8F9FA;
+.product {
+    background-color: #f8f9fa;
     width: 100vw;
     height: 1300px;
 }
 
-.product_tit{
+.product_tit {
     text-align: center;
     font-family: 'Cafe24Ssurround';
     font-size: 50px;
     padding: 150px 0 100px;
 }
 
-.product_table{
+.product_table {
     position: relative;
     width: 70%;
     margin: 0 auto;
     display: grid;
+    place-items: center;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-row-gap: 3rem;
 }
 
-.sell_img{
+.sell_img {
     width: 200px;
     border-radius: 20px;
     margin-bottom: 15px;
 }
 
-.sell p{
+.sell p {
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 10pt;
 }
 
-.sell_name{
+.sell_name {
     font-size: 16px;
     margin-bottom: 8px;
 }
 
-.sell_price{
+.sell_price {
     font-size: 15px;
     font-weight: 700;
     margin-bottom: 8px;
 }
 
-.sell_reg{
+.sell_reg {
     font-size: 13px;
     margin-bottom: 3px;
 }
 
-
-.sell_react{
+.sell_react {
     color: #868e96;
     font-size: 13px;
 }
 
-.button_area{
+.button_area {
     display: flex;
     justify-content: center;
     padding: 120px 0 0 0;
 }
 
-.product_more_btn{
+.product_more_btn {
     width: 200px;
     height: 50px;
     border: none;
@@ -348,72 +375,67 @@
     margin: 0 auto;
 }
 
-
 /*중고거래 인기검색어 top10*/
-.top10{
+.top10 {
     border-bottom: 1px solid #a4a9b5;
 }
 
-.top10_tit{
+.top10_tit {
     font-size: 30px;
     line-height: 1.3em;
     margin: 100px 0 70px;
     text-align: center;
 }
 
-.top10 ul{
+.top10 ul {
     list-style-type: none;
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 100px;
 }
 
-.top10 li{
+.top10 li {
     font-family: 'Cafe24Ssurround';
     font-size: 25px;
     color: #0b0b0b;
     text-shadow: 1px 1px 20px tomato;
 }
 
-.top10 li:hover{
-    color: #FF8A3D;
+.top10 li:hover {
+    color: #ff8a3d;
     text-shadow: 1px 1px 20px yellow /*#56C271*/;
     cursor: pointer;
 }
 
-
-
-
 /*기타 회사정보*/
-.info{
+.info {
     display: flex;
     justify-content: center;
     padding: 70px 0;
 }
 
-.info1{
+.info1 {
     display: flex;
 }
 
-.info1 ul{
+.info1 ul {
     list-style-type: none;
     padding: 20px;
     line-height: 2em;
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 600;
-    color:  #757980;
+    color: #757980;
 }
 
-
 /*당근마켓 앱 다운로드*/
-.app_tit{
+.app_tit {
     font-family: 'Cafe24Ssurround';
     font-weight: 600;
     font-size: 30px;
     padding-left: 40px;
 }
 
-.app_img{
+.app_img {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -423,7 +445,7 @@
     padding-left: 40px;
 }
 
-[class ^= "app_download"]{
+[class^='app_download'] {
     display: flex;
     align-items: center;
     background-color: rgb(235, 237, 239);
@@ -432,63 +454,66 @@
     width: 146.7px;
 }
 
-.app_img img{
+.app_img img {
     height: 34px;
     margin-right: 10px;
 }
 
-.app_download_1{
+.app_download_1 {
     width: 146.7px;
     padding-left: 15px;
     margin-right: 20px;
 }
 
-
 /*footer*/
-.footer_box{
+.footer_box {
     display: flex;
     justify-content: center;
 }
 
-.footer{
+.footer {
     width: 50%;
     border-top: 1px solid#eaebee;
     padding: 40px 0;
 }
 
-.txt_em{
-    color:#868b94;
+.txt_em {
+    color: #868b94;
     font-family: 'SUITE-Regular';
     font-size: 14px;
     font-weight: 600;
-    letter-spacing: 3px;    
+    letter-spacing: 3px;
 }
 
-.info2{
-    color:#868b94;
+.info2 {
+    color: #868b94;
     font-family: 'SUITE-Regular';
     font-size: 14px;
     word-spacing: 5px;
     padding-left: 20px;
 }
 
-.txt_em_1{
-    color:#868b94;
+.txt_em_1 {
+    color: #868b94;
     font-family: 'SUITE-Regular';
     font-size: 14px;
     font-weight: 700;
     word-spacing: 5px;
-    text-decoration: none;
     padding-left: 20px;
     margin: 15px 0;
 }
 
-.sns_lan{
+.txt_em_1 a{
+    text-decoration: none;
+    color: #6d7076;
+}
+
+.sns_lan {
     margin-right: 20px;
     float: right;
 }
 
-.fa-brands{
+.fa-brands {
     height: 15px;
     filter: grayscale(100%);
 }

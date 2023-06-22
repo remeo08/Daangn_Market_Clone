@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" type="image/x-icon" href="./image/favicon.ico">
     <script src="https://kit.fontawesome.com/91b7c18548.js" crossorigin="anonymous"></script>
+    <script src="./index.js" defer></script>
     <title>당신 근처의 당근마켓</title>
 </head>
 <body>
@@ -29,6 +30,18 @@
     </nav>
 
 
+    <div class="carousel_btn_container">
+        <div class="carousel_btn_box">
+            <button type="button" class="slide_row_btn" onclick="carousel_button1()"></button>
+            <button type="button" class="slide_row_btn" onclick="carousel_button2()"></button>
+            <button type="button" class="slide_row_btn" onclick="carousel_button3()"></button>
+            <button type="button" class="slide_row_btn" onclick="carousel_button4()"></button>
+        </div>
+    </div>
+    
+
+
+<section class="carousel_container">
 
     <section class="sec1">
         <div class="sec1_txt">
@@ -72,7 +85,7 @@
                 <div>
                     <img class="sec3_png" src="./image/lost-and-found.png">
                     <p class="sec3_merit_tit">동네분실센터</p>
-                    <p>무언가를 잃어버렸을 때,<br>함께 찾을 수 있어요.</p>
+                    <p>무언가 잃어버렸을 때,<br>함께 찾을 수 있어요.</p>
                 </div>
                 <div>
                     <img class="sec3_png" src="./image/assoc.png">
@@ -100,6 +113,25 @@
             <button class="sec4_btn" type="button" href="#">당근마켓 동네가게 찾기</button>
         </div>
     </section>
+
+</section>
+
+
+<div class="top10">
+    <p class="top10_tit">중고거래 인기검색어 Top 10</p>
+    <ul>
+        <li>자전거</li>
+        <li>의자</li>
+        <li>냉장고</li>
+        <li>노트북</li>
+        <li>컴퓨터</li>
+        <li>모니터</li>
+        <li>아이폰</li>
+        <li>책상</li>
+        <li>아이패드</li>
+        <li>가방</li>
+    </ul>
+</div>
 
 
 
@@ -171,21 +203,6 @@
 
 
    
-    <div class="top10">
-        <p class="top10_tit">중고거래 인기검색어 Top 10</p>
-        <ul>
-            <li>자전거</li>
-            <li>의자</li>
-            <li>냉장고</li>
-            <li>노트북</li>
-            <li>컴퓨터</li>
-            <li>모니터</li>
-            <li>아이폰</li>
-            <li>책상</li>
-            <li>아이패드</li>
-            <li>가방</li>
-        </ul>
-    </div>
 
     <section class="info">
         <div class="info1">
