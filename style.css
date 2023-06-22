@@ -29,7 +29,7 @@ body{
     overflow-x: hidden;
 }
 
-body::-webkit-scrollbar {
+::-webkit-scrollbar:horizontal {
     display: none;
 }
 
